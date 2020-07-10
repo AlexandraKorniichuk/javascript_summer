@@ -26,9 +26,9 @@ if (ordered > total) {
 const ADMIN_PASSWORD = "jqueryismyjam";
 let message;
 const enter = prompt("Enter password please");
-cancel - null
-ok - jqueryismyjam
-something else
+// cancel - null
+// ok - jqueryismyjam
+// something else
 if (enter == null) {
   message = "Отменено пользователем!";
   const none = alert(message);
