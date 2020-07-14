@@ -97,19 +97,10 @@ let cost;
 // };
 
 //task 6
-let total2 = 0;
-let message4;
-let per;
-let input = +prompt("Введите, пожалуйста число");
-if (input == null) {
-    message4 = `Общая сумма чисел равна ${total2}`;
-    const sum = alert(message4);
-    console.log(sum);
-} else if (input == NaN) {
-    message4 = "Было введено не число, попробуйте еще раз";
-    const nonumber = alert(message4);
-    console.log(nonumber);
-} else {
-    total2 = total2 + input;
-    console.log(total2);
-};
+  // let input = prompt("Введите число");
+  // let total6 = 0;
+  // while (input != 0) {
+  //   input = +prompt("Введите число");
+  //   total6 += input;
+  // };
+  // alert(`Общая сума равна ${total6}`);
