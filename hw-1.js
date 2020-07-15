@@ -23,49 +23,41 @@ if (ordered > total) {
 }
 
 //task 3
-const ADMIN_PASSWORD = "jqueryismyjam";
-let message;
-// const enter = prompt("Enter password please");
 // cancel - null
 // ok - jqueryismyjam
 // something else
+// const ADMIN_PASSWORD = "jqueryismyjam";
+// const enter = prompt("Enter password please");
 // if (enter == null) {
-//   message = "Отменено пользователем!";
-//   const none = alert(message);
-//   console.log(none);
+//   alert("Отменено пользователем!");
 // } else if (enter == ADMIN_PASSWORD) {
-//   message = "Добро пожаловать!";
-//   const welcome = alert(message);
-//   console.log(welcome);
+//   alert("Добро пожаловать!");
 // } else {
-//   message = "Доступ запрещен, неверный пароль!";
-//   const wrong = alert(message);
-//   console.log(wrong);
+//   alert("Доступ запрещен, неверный пароль!");
 // };
 
 //task 4
 let credits = 23580;
 let pricePerDroid = 3000;
-let message2;
-// const quantity = prompt("Какое колчиество роботов вы хотите купить?");
-// if (quantity == null) {
-//   message2 = "Отменено пользователем!";
-//   const none2 = alert(message2);
-//   console.log(none2);
-// } else if (quantity * pricePerDroid > credits) {
-//   message2 = "Недостаточно средств на счету!";
-//   const notenoughmoney = alert(message2);
-//   console.log(notenoughmoney);
+// const quantity = +prompt("Какое колчиество роботов вы хотите купить?");
+// console.log(quantity);
+// if (quantity === 0) {
+//   alert("Отменено пользователем!");
 // } else {
-//   let droids;
-//   droids = credits - pricePerDroid * quantity;
-//   message2 = `Вы купили ${quantity} дроидов, на счету осталось ${droids} кредитов.`;
-//   const enoughmoney = alert(message2);
-//   console.log(enoughmoney);
+//   let totalsum = quantity * pricePerDroid;
+//   if (totalsum <= credits) {
+//     credits -= totalsum;
+//     alert(
+//       `Вы купили ${quantity} дроидов, на счету осталось ${credits} кредитов.`
+//     );
+//   } else if (totalsum > credits) {
+//     alert("Недостаточно средств на счету!");
+//   } else {
+//     alert("Это не число, напишите число!");
+//   }
 // };
 
 //task 5
-let message3;
 let cost;
 // const country = prompt("В какую страну вы хотите доставку?").toLowerCase();
 // switch (country) {
@@ -85,22 +77,18 @@ let cost;
 //     cost = 120;
 //     break;
 //   default:
-//     message3 = "В вашей стране доставка не доступна";
-//     const nocountry = alert(message3);
-//     console.log(nocountry);
+//     alert("В вашей стране доставка не доступна");
 //     break;
 // }
 // if (message3 == undefined) {
-//   message3 = `Доставка в ${country} будет стоить ${cost} кредитов`;
-//   const exit = alert(message3);
-//   console.log(exit);
+//   alert(`Доставка в ${country} будет стоить ${cost} кредитов`);
 // };
 
 //task 6
-  // let input = prompt("Введите число");
-  // let total6 = 0;
-  // while (input != 0) {
-  //   input = +prompt("Введите число");
-  //   total6 += input;
-  // };
-  // alert(`Общая сума равна ${total6}`);
+let total6 = 0;
+let input
+while (input != 0) {
+  input = +prompt("Введите число");
+  total6 += input;
+};
+alert(`Общая сума равна ${total6}`);
