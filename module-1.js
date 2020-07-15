@@ -138,13 +138,13 @@
 // for(let i = 0; i <= message.length; i++) {
 //     console.log(i);
 // };
-for (let i = 1; i < 15; i += 3){
-    if (i % 2 === 0 || i === 13) {
-        continue;
-    }
-    console.log(i);
-}
-console.log(isNaN(val));
+// for (let i = 1; i < 15; i += 3){
+//     if (i % 2 === 0 || i === 13) {
+//         continue;
+//     }
+//     console.log(i);
+// }
+// console.log(isNaN(val));
 
 
 

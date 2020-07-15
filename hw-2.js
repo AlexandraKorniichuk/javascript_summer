@@ -37,10 +37,11 @@ console.log(formatString('Nunc sed turpis. Curabitur a felis in nunc fringilla t
 // вернется форматированная строка
 
 //task 6
-//   let input = +prompt("Введите число");
+//   let input;
 //   const numbers = [];
 //   let total = 0;
 //   while (input != null) {
+    // input = +prompt("Введите число");
 //     numbers.push(input);
 //     total += input;
 //   };
