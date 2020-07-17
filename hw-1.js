@@ -86,7 +86,7 @@ let cost;
 
 //task 6
 let total6 = 0;
-let input
+let input = confirm(`Введите число`);
 while (input != 0) {
   input = +prompt("Введите число");
   total6 += input;
