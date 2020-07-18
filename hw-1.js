@@ -59,36 +59,38 @@ let pricePerDroid = 3000;
 
 //task 5
 let cost;
-// const country = prompt("В какую страну вы хотите доставку?").toLowerCase();
-// switch (country) {
-//   case "китай":
-//     cost = 100;
-//     break;
-//   case "чили":
-//     cost = 250;
-//     break;
-//   case "австралия":
-//     cost = 170;
-//     break;
-//   case "индия":
-//     cost = 80;
-//     break;
-//   case "ямайка":
-//     cost = 120;
-//     break;
-//   default:
-//     alert("В вашей стране доставка не доступна");
-//     break;
-// }
-// if (message3 == undefined) {
-//   alert(`Доставка в ${country} будет стоить ${cost} кредитов`);
-// };
+const country = prompt("В какую страну вы хотите доставку?").toLowerCase();
+switch (country) {
+  case "китай":
+    cost = 100;
+    alert(`Доставка в ${country} будет стоить ${cost} кредитов`);
+    break;
+  case "чили":
+    cost = 250;
+    alert(`Доставка в ${country} будет стоить ${cost} кредитов`);
+    break;
+  case "австралия":
+    cost = 170;
+    alert(`Доставка в ${country} будет стоить ${cost} кредитов`);
+    break;
+  case "индия":
+    cost = 80;
+    alert(`Доставка в ${country} будет стоить ${cost} кредитов`);
+    break;
+  case "ямайка":
+    cost = 120;
+    alert(`Доставка в ${country} будет стоить ${cost} кредитов`);
+    break;
+  default:
+    alert("В вашей стране доставка не доступна");
+    break;
+};
 
 //task 6
-let total6 = 0;
-let input = confirm(`Введите число`);
-while (input != 0) {
-  input = +prompt("Введите число");
-  total6 += input;
-};
-alert(`Общая сума равна ${total6}`);
+// let total6 = 0;
+// let input = confirm(`Введите число`);
+// while (input != 0) {
+//   input = +prompt("Введите число");
+//   total6 += input;
+// };
+// alert(`Общая сума равна ${total6}`);

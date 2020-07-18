@@ -55,8 +55,12 @@ console.log(findLongestWord("May the force be with you")); // 'force'
 //task 4
 const formatString = function (string) {
   if (string.length > 40) {
-    let array = string.split("");
-    array.slice(39);
+    const array = string.split("");
+    for (let i = 0; i < string.length; i++) {
+      if (i >= 39) {
+        array.splice(i, 1);
+      }
+    }
     array.push("...");
     array.join("");
     return array;
