@@ -1,3 +1,4 @@
+"use strict";
 // console.log("Интерпритатор");
 // console.log("переводит");
 // console.log("код");

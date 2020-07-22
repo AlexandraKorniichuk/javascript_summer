@@ -1,3 +1,4 @@
+"use strict";
 //task 1
 let name = "Генератор защитного поля";
 let price = 1000;

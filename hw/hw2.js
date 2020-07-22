@@ -1,3 +1,4 @@
+"use strict";
 //task 1
 const logItems = function (array) {
   let j = 1;
