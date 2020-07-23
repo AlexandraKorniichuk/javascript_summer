@@ -9,10 +9,11 @@ const user = {
 user.mood = "happy";
 user.hobby = "skydiving";
 user.premium = false;
-const keys = Object.keys(user);
 const values = Object.values(user);
-console.log(user);
-for (let key of keys) {
+let i = 0;
+for (let key in user) {
+  console.log(`${key}: ${values[i]}`);
+  i++;
 }
 
 //task 2
