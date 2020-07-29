@@ -86,7 +86,7 @@ console.log(user.name);
 
 //методы call & apply
 function hello (hotelName, hotelStars) {
-  return console.log(`Hello, ${this.name}, ${hotelName}, ${hotelStars} glad to see you`)
+  return console.log(`Hello, ${this.name}, ${hotelName}, ${hotelStars} glad to see you`);
 };
 hello.call(user, "Hilton", 5);
 hello.apply(user, ["Hilton", 5]);
