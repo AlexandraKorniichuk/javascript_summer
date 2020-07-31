@@ -1,5 +1,5 @@
 "use strict";
-//процудурный код
+//процедурный код
 const name = "Alex";
 const age = 11;
 function greet(name, age) {
@@ -7,7 +7,7 @@ function greet(name, age) {
 }
 greet(name, age);
 
-//Объектно озиентированный код
+//Объектно ориентированный код
 const user = {
   name: "Alex",
   age: 15,
@@ -17,7 +17,7 @@ const user = {
 };
 user.greet();
 
-//Функции конструкторы
+//Функции-конструкторы
 const User = function (name, age) {
   this.name = name;
   this.age = age;
@@ -81,10 +81,8 @@ class SuperNewUser extends NewUser {
     this.superAge = superAge;
   }
   toGreet() {
-      console.log("Hello");
+    console.log("Hello");
   }
 }
 const newSuperUser = new SuperNewUser("Alexexandra", 16, "Stranno", 0);
 console.log(newSuperUser);
-
-
