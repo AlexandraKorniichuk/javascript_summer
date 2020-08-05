@@ -24,7 +24,7 @@ poly.getInfo(); // Login: Poly, Email: poly@mail.com
 
 //task 2
 class User {
-  constructor ({ name, age, followers }) { 
+  constructor({ name, age, followers }) {
     this.name = name;
     this.age = age;
     this.followers = followers;
@@ -34,7 +34,7 @@ class User {
       `${this.name} is ${this.age} years old and has ${this.followers} followers`
     );
   };
-};
+}
 const mango1 = new User({
   name: "Mango",
   age: 2,
@@ -107,13 +107,17 @@ console.log(builder.value); // '^.^'
 builder.pad("=");
 console.log(builder.value); // '=^.^='
 
-//task 5 - не сделано
+//task 5 - не доделано
 class Car {
-  static getSpecs(car)
-  constructor({maxSpeed, price}) {
-    this.maxSpeed = maxSpeed;
+  static getSpecs(car) {
+    console.log(
+      `maxSpeed: ${car.maxSpeed}, speed: ${car.speed}, isOn: ${car.isOn}, distance: ${car.distance}, price: ${car.price}`
+    );
+  }
+  constructor(car) {
+    this.maxSpeed = car.maxSpeed;
     this.speed = 0;
-    this._price = price;
+    this._price = car.price;
     this.isOn = false;
     this.distance = 0;
   }
@@ -121,30 +125,25 @@ class Car {
     return this._price;
   }
   set price(value) {
-    return (this._price = value);
+    return this._price = value;
   }
   turnOn() {
-    return this.isOn = true;
+    return (this.isOn = true);
   }
   turnOff() {
-    this.speed = 0;
-    return this.isOn = false;
+    return (this.isOn = false), (this.speed = 0);
   }
   accelerate(value) {
-    if (this.speed <= this.maxSpeed) {
-      return (this.speed += value);
-    }
+    this.speed += value;
+    if (this.speed <= this.maxSpeed) return this.speed;
   }
   decelerate(value) {
-    if (this.speed > 0) {
-      return (this.speed -= value);
-    }
+    this.speed -= value;
+    if (this.speed > 0) return this.speed;
   }
   drive(hours) {
-    if (this.isOn === true) {
-      this.distance = hours * this.speed;
-      return this.distance;
-    }
+    this.distance += hours * this.speed;
+    if (this.isOn === true) return this.distance;
   }
 }
 const mustang = new Car({ maxSpeed: 200, price: 2000 });
@@ -161,7 +160,3 @@ Car.getSpecs(mustang);
 console.log(mustang._price); // 2000
 mustang.price = 4000;
 console.log(mustang._price); // 4000
-
-
-
-
