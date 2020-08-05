@@ -57,11 +57,13 @@ class Storage {
     return this.items;
   }
   addItem(item) {
-    this.items.push(item);
+    if (!this.items.includes(item)) return this.items.push(item);
   }
   removeItem(item) {
-    for (let i = 0; i < this.items.length; i++) {
-      return this.items.splice(i, 1);
+    if (this.items.includes(item)) {
+      for (let i = 0; i < this.items.length; i++) {
+        return this.items.splice(i, 1);
+      }
     }
   }
 }
@@ -125,7 +127,7 @@ class Car {
     return this._price;
   }
   set price(value) {
-    return this._price = value;
+    return (this._price = value);
   }
   turnOn() {
     return (this.isOn = true);
