@@ -84,6 +84,6 @@ form.addEventListener("submit", () => {
   console.log("Обработка события submit");
   console.dir(form);
 })
-// input.addEventListener("focus" () => {
-//   // input.style.border = "2px"
-// });
+input.addEventListener("focus", () => {
+  input.style.backgroundColor = "white";
+});
